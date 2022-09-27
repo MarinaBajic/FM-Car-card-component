@@ -33,6 +33,7 @@ main .luxury {
 footer {
   font-size: 11px;
   text-align: center;
+  color: black;
 }
 footer a {
   color: hsl(228deg, 45%, 44%);

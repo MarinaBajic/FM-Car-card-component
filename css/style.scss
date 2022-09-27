@@ -56,12 +56,19 @@ main {
         }
 
         button {
+            font-family: 'Lexend Deca', sans-serif;
             background: $bg-heading-btn;
             width: 65%;
             font-size: 1.1em;
             padding: .9em 1em;
             border-radius: 2em;
-            border-width: 0px;
+            border: .2em solid $bg-heading-btn;
+
+            &:hover {
+                cursor: pointer;
+                color: $bg-heading-btn;
+                background: transparent;
+            }
         }
     }
 

@@ -42,12 +42,18 @@ main .card p {
   line-height: 1.7em;
 }
 main .card button {
+  font-family: "Lexend Deca", sans-serif;
   background: hsl(0deg, 0%, 95%);
   width: 65%;
   font-size: 1.1em;
   padding: 0.9em 1em;
   border-radius: 2em;
-  border-width: 0px;
+  border: 0.2em solid hsl(0deg, 0%, 95%);
+}
+main .card button:hover {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 95%);
+  background: transparent;
 }
 main .sedans {
   background: hsl(31deg, 77%, 52%);

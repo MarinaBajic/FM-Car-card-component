@@ -33,7 +33,6 @@ main {
     display: flex;
     flex-direction: column;
 
-
     .card {
         padding: 2.5em 3em;
         width: 15em;
@@ -100,5 +99,27 @@ footer {
 
     a {
         color: hsl(228, 45%, 44%);
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    body {
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: row;
+
+        .sedans {
+            border-radius: $border-radius 0 0 $border-radius;
+        }
+
+        .luxury {
+            border-radius: 0 $border-radius $border-radius 0;
+        }
+
+        button {
+            margin-top: 3em;
+        }
     }
 }

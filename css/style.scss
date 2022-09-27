@@ -13,10 +13,18 @@ $bg-heading-btn: hsl(0, 0%, 95%);
 }
 
 body {
-    // font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
-    color: white;
-    font-size: 1rem;
+    color: $bg-heading-btn;
+    background: $bg-heading-btn;
+    font-size: .7rem;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin: 2em 0;
 }
 
 $border-radius: .3em;
@@ -24,29 +32,69 @@ $border-radius: .3em;
 main {
     display: flex;
     flex-direction: column;
-    margin: 2em;
+
 
     .card {
-        padding: 2em 2.5em;
+        padding: 2.5em 3em;
+        width: 15em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        img {
+            width: 25%;
+        }
+
+        h1 {
+            font-family: 'Big Shoulders Display', cursive;
+            text-transform: uppercase;
+            font-size: 2.5em;
+        }
+
+        p {
+            color: $paragraph;
+            line-height: 1.7em;
+        }
+
+        button {
+            background: $bg-heading-btn;
+            width: 65%;
+            font-size: 1.1em;
+            padding: .9em 1em;
+            border-radius: 2em;
+            border-width: 0px;
+        }
     }
 
     .sedans {
         background: $orange;
         border-radius: $border-radius $border-radius 0 0;
+
+        button {
+            color: $orange;
+        }
     }
 
     .suvs {
         background: $cyan;
+
+        button {
+            color: $cyan;
+        }
     }
 
     .luxury {
         background: $dark-cyan;
         border-radius: 0 0 $border-radius $border-radius;
+
+        button {
+            color: $dark-cyan;
+        }
     }
 }
 
 footer {
-    font-size: 11px;
+    font-size: .7em;
     text-align: center;
     color: black;
 
